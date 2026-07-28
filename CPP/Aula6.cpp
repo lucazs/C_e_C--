@@ -25,7 +25,7 @@ int main()
 
     cout << "Divisao n1 / n2: " << res1 << endl;
     cout << "Resto da Divisão de n1 % n2: " << res2 << endl;
-    cout << "N3 = " << n3 << " N4 = " << n2 << endl;
+    cout << "N3 = " << n3 << " N4 = " << n4 << endl;
 
     return 0;
 }
