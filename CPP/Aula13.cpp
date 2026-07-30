@@ -30,41 +30,40 @@ int main()
             cout << "Informacao invalida." << endl;
     }
 
-    cout << "Selecione o transporte: " << endl;
+    // cout << "Selecione o transporte: " << endl;
     
-    cout << "[1] - Carro\n[2] - Moto\n[3] - Aviao\n[4] - Helicoptero\n";
-    cin >> val;
+    // cout << "[1] - Carro\n[2] - Moto\n[3] - Aviao\n[4] - Helicoptero\n";
+    // cin >> val;
 
-    switch (val)
-    {
-    case 1:
-    case 2:
-        cout << "\nTransporte terrestre\n";
-        switch (val)
-        {
-        case 1:
-            cout << "\nCarro selecionado\n";
-            break;
-        case 2:
-            cout << "\nMoto selecionado\n";
-            break;
-        }
-        break;
-    case 3:
-    case 4:
-        cout << "\nTransporte Aerio\n";
-        switch (val)
-        {
-        case 1:
-            cout << "\nAviao selecionado\n";
-            break;
-        case 2:
-            cout << "\nHelicoptero selecionado\n";
-            break;
-        }
-    default:
-        cout << "Valor invalido";
-        break;
-    }
-
+    // switch (val)
+    // {
+    // case 1:
+    // case 2:
+    //     cout << "\nTransporte terrestre\n";
+    //     switch (val)
+    //     {
+    //     case 1:
+    //         cout << "\nCarro selecionado\n";
+    //         break;
+    //     case 2:
+    //         cout << "\nMoto selecionado\n";
+    //         break;
+    //     }
+    //     break;
+    // case 3:
+    // case 4:
+    //     cout << "\nTransporte Aerio\n";
+    //     switch (val)
+    //     {
+    //     case 1:
+    //         cout << "\nAviao selecionado\n";
+    //         break;
+    //     case 2:
+    //         cout << "\nHelicoptero selecionado\n";
+    //         break;
+    //     }
+    // default:
+    //     cout << "Valor invalido";
+    //     break;
+    // }
 }
