@@ -11,12 +11,22 @@ int main()
 
     // 1. criar um gerador baseado no  hardware do pc
     random_device rd;
+    /*  Pega dados imprevisíveis do hardware do seu computador para garantir que o 
+        número mude toda vez que você abrir o programa.
+    */
 
     // 2. escolher o algoritmo de geração (Mersenne Twister)
     mt19937 gerador(rd());
+    /*
+        É um dos algoritmos matemáticos mais rápidos e seguros do mundo para criar sequências aleatórias.
+    */
 
     // 3. Informar a faixa desejada
     uniform_int_distribution<int> distruicao(minimo, maximo);
+    /*
+        Garante que todos os números do intervalo que você escolheu tenham exatamente a mesma chance de 
+        serem sorteados.
+    */
 
     // 4. Gerar o número aleatorio
     int numero_aleatorio = distruicao(gerador);
