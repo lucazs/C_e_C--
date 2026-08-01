@@ -8,6 +8,7 @@ int main()
     system("cls");
     int minimo = 0, maximo = 10;
     int numero_escolhido = 0;
+    int tentativas = 0;
 
     // 1. criar um gerador baseado no  hardware do pc
     random_device rd;
@@ -36,15 +37,24 @@ int main()
 
     do
     {
+        cout << "\nDigite seu palpite: ";
         cin >> numero_escolhido;
+        tentativas++;
         
         if(numero_aleatorio == numero_escolhido)
         {
-            cout << "Voce acerto!!!\n";
+            cout << "\n====================================\n";
+            cout << "Voce acertou!!! Parabens!!!\n";
+            cout << "Numero de tentativas: " << tentativas << "\n";
+            cout << "====================================\n";
+        }
+        else if (numero_escolhido < numero_aleatorio)
+        {
+            cout << "O numero secreto e MAIOR do que " << numero_escolhido << ". Tente novamente!\n";
         }
         else
         {
-            cout << "Que pena, voce errou!!!\nEscolha outro numero: \n";
+            cout << "O numero secreto e MENOR do que " << numero_escolhido << ". Tente novamente!\n";
         }
         
     } 
