@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: g++.exe build active file",
+            "command": "g++",
+            "args": [
+                "-std=c++23",
+                "-Wall",
+                "-Wextra",
+                "-g3",
+                "${file}",
+                "-o",
+                "${fileDirname}\\output\\${fileBasenameNoExtension}.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
